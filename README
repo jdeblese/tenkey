@@ -1,0 +1,11 @@
+== Tenkey Controller ==
+
+This is an adapter board and an IO expander for converting an old
+number pad for use with a modern PC. The number pad switches are
+not wired in a matrix but are rather brought out via a DIL header.
+Due to space constraints, and so as to not have to modify the
+number pad itself, an I2C IO expander will be plugged into the
+DIL header to read out the key state. Firmware on an ATMega32u2
+will then pass this on to the computer using the LUFA library
+written by Dean Camera. The current firmware is an adaptation
+of his USB keyboard example.
