@@ -1,0 +1,8 @@
+--- v0.1 ---
+* Add physical RESET and HWB (D7) buttons
+* Add VBUS pin header for ISP
+* Prototype board w/ LEDs and reversed USB
+  * Output ports are pull-up, consider reversing LED polarity
+  * Possible USB EMI problems, ensure USB port is on same side
+  * LED brightness is too high on prototype board
+  * 0804 LEDs rather than 1206?
